@@ -4,7 +4,7 @@ A simple and responsive To-Do List web app built with **HTML**, **CSS**, and **J
 
 ## 🚀 Live Demo
 
-👉 [Click here to view the live app](https://github.com/manasani-chakri/To-Do-List-App.git)  
+👉 [Click here to view the live app](https://github.com/manasani-chakri/To-Do-List-App/blob/main/README.md)  
 *(Live app is live in Github Pages)*
 
 ---
@@ -29,10 +29,10 @@ A simple and responsive To-Do List web app built with **HTML**, **CSS**, and **J
 
 ## 📷 Screenshots Desktop View
 
-![screenshot - Desktop View](screenshots/Desktop%20View.png)
+![screenshot - Desktop View](https://github.com/manasani-chakri/To-Do-List-App/blob/main/Ipad%20View.png)
 
 ## 📷 Screenshots Ipad View
-![screenshot - Ipad View](screenshots/Ipad%20View.png)
+![screenshot - Ipad View](https://github.com/manasani-chakri/To-Do-List-App/blob/main/Ipad%20View.png)
 ---
 
 ## 📁 How to Run Locally
@@ -66,5 +66,6 @@ This project is open-source and free to use, feel free to contribute and make th
    **Chakri Magasani**
    
 📧[Email](magasanichakri81@gmail.com)
+
 
 #📱09381171286
