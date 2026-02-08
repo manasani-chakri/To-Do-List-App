@@ -1,0 +1,208 @@
+:root{
+    --gradient:linear-gradient(130deg, #ef893b, #e72c3c);
+    --gradient-hover:linear-gradient(90deg, #e72c3c, #ef893b);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: var(--gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    width: 550px;
+    padding: 20px;
+    background: #2c3036;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 20px;
+    color: #898f97;
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #363a41;
+    font-size: 18px;
+}
+
+input[type=text]{
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #363a42;
+    font-size: 15px;
+    color: #f6f6f6;
+}
+
+input:focus{
+    outline: none;
+}
+
+input.edit-date{
+    background-color: #ccc;
+}
+
+button{
+    padding: 10px 14px;
+    border: none;
+    background: var(--gradient);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+button:hover{
+    background: var(--gradient-hover);
+}
+
+#pending-tasks{
+    margin-top: 15px;
+    font-size: 16px;
+    color: #898f97;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hidden{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.date-picker{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #363a41;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.calendar-icon{
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 15px;
+    color: rgb(189, 169, 17);
+    font-weight: bold;
+}
+
+#clear-all-btn{
+    padding: 8px 12px;
+    background: rgba(19, 74, 212, 0.703);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    display: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #131827;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+li span{
+    flex: 1;
+    color: #9ed3d7;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.task-checkbox{
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ef893b;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+.task-checkbox:checked{
+    background-color: #e5f413;
+    border-color: #e72c3c;
+}
+
+.task-checkbox:checked::after{
+    content: "✔";
+    color: #070e0f;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.delete-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: red;
+}
+
+.delete-btn:hover{
+    color: darkred;
+    background: none;
+}
+
+.edit-btn, .edit-btn:hover
+.save-btn, .save-btn:hover{
+    background: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-checkbox{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#clear-all-btn:hover{
+    background: darkred;
+
+}
